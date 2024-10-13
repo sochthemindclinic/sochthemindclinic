@@ -1,317 +1,445 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Soch-The Mind Clinic | Coming Soon </title>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="assets/icomoon.css">
-    
+    <meta charset="utf-8">
+    <title>Soch - The Mind Clinic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<style type="text/css">
-
-body {
-	font-family: "Roboto", sans-seriff;
-    color: #949393;
-    margin: 0;
-}
-a, button {
-transition: 0.3s all ease-out;
-}
-a {
-	color: #111;
-	text-decoration: none;
-}
-a:hover {
-	color: #0043ee;
-}
-.row {
-    display: flex;
-}
-.container {
-    width: 530px;
-    margin: 170px auto;
-}
-#body-wrap .col-8 {
-    width: 70%;
-}
-#body-wrap .col-4 {
-    width: 30%;
-    height: 950px;
-    overflow: hidden;
-}
-header#header {
-    margin-bottom: 70px;
-}
-.main-content {
-    color: #fff;
-}
-.main-content h1 {
-    font-size: 3em;
-    font-weight: 700;
-    color: #000;       
-    margin-bottom: 0; 
-}
-#countdown-clock {
-	font-size: 30px;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 50px 0;
-}
-#countdown-clock .time{
-	background-color: #f5f5f5;
-	color: #000;
-	border-radius: 10px;
-	padding: 20px;
-	margin-right: 10px;
-    margin-bottom: 10px;
-	text-align: center;
-}
-#countdown-clock .time > span{
-	font-weight: 700;
-}
-#countdown-clock .time small{
-	padding-top: 5px;
-	font-size: 12px;
-	text-transform: uppercase;
-    display: block;
-}
-.main-content p {
-	font-size: 1.2em;
-	color: #666;
-	width: 70%;
-}
-#form .form-group {
-    display: flex;
-    margin: 20px 0;
-}
-input::placeholder{
-   color: #949393;
-}
-.form-group input.form-control {
-    width: 250px;
-    height: 50px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-left: 20px;
-    border: none;
-    background: #f5f5f5;
-}
-.form-group button.submit-button {
-    padding: 18px 30px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: #0043ee;
-    border: none;
-	cursor: pointer;
-    color: #fff;
-}
-.form-group button.submit-button:hover {
-    background-color: #222630;
-}
-.form-group button.submit-button span {
-    font-weight: 700;
-    padding-left: 5px;
-}
-#footer .social-links {
-    padding-top: 20px;
-}
-#footer .social-links ul {
-	display: flex;
-	list-style: none;
-	padding: 0;
-}
-#footer .social-links li {
-    padding-right: 20px;
-}
-#footer .social-links ul a {
-    font-size: 1.6em;
-    color: #626262;
-    text-decoration: none;
-}
-#footer .social-links ul a:hover {
-    color: #111;
-}
-.copyright p {
-    color: #626262;
-}
-
-
-@media (max-width: 999px) {
-	.container {
-	    padding-left: 70px;
-	}
-	#body-wrap .col-4 {
-	    width: 40%;
-	    margin-left: -48px;
-	    z-index: -1;
-	}	
- }
-
-@media (max-width: 599px) {
-	#body-wrap .col-8 {
-	    width: 100%;
-	}
-	.container {
-		width: 100%;
-	}
-	#body-wrap .page-title {
-	    width: 98%;
-	}
-	#body-wrap .col-4 {
-	    width: 100%;
-	    margin-left: -438px;
-	    opacity: 0.1;
-	}
- }
-
-@media (max-width: 540px) {
-	.container {
-    	padding-right: 30px;
-	    padding-left: 30px;
-	}
-	.main-content h1 {
-	    font-size: 2.4em;
-	}
-	#form .form-group {
-	    flex-wrap: wrap;
-	}
-	.form-group input.form-control {
-	    width: 100%;
-	    margin-bottom: 10px;
-        background: #e4edf7;
-	}
-	.form-group button.submit-button {
-	    width: 100%;
-	}
-	#body-wrap .col-4 {
-	    margin-left: -108px;
-	}
- }
-
-</style>
-
 <body>
-	
-	<div id="body-wrap">
-		<div class="row">
-			<div class="col-8">
-				<div class="container">
-
-					<header id="header">
-						<div class="logo">
-							<img src="images/logo.png" alt="logo">
-						</div>	
-					</header>
-
-					<div class="main-content">
-
-						<div class="page-title">
-
-							<h1>We are launching soon!</h1>
-
-							<div id="countdown-clock">
-								<div class="time">
-									<span class="days"></span>
-									<small>Days</small>
-								</div>
-								<div class="time">
-									<span class="hours"></span>
-									<small>Hours</small>
-								</div>
-								<div class="time">
-									<span class="minutes"></span>
-									<small>Minutes</small>
-								</div>
-								<div class="time">
-									<span class="seconds"></span>
-									<small>Seconds</small>
-								</div>
-							</div>
-
-						</div><!--page-title-->
-					</div><!--main-content-->
-
-					<footer id="footer">
-
-						<div class="social-links">
-							<ul>
-								<li><a href="https://www.instagram.com/soch_themindclinic/"><i class="fa fa-instagram"></i></a></li>
-							</ul>
-						</div><!--social-links-->
-
-						<div class="copyright">
-							<p>Copyright &copy; <a>Soch-The Mind Clinic</a> 2024.</p>
-						</div>
-
-					</footer>
-
-				</div>
-			</div><!--col-8-->
-
-			<div class="col-4">
-				<img src="images/sideimg.jpg" alt="wallpaper" class="sideimg">
-			</div>		
-		</div><!--row-->
-
-	</div><!--body-wrap-->
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
 
 
-<script type="text/javascript">
-	function getTimeRemaining(endtime) {
-		const total = Date.parse(endtime) - Date.parse(new Date());
-		const seconds = Math.floor((total / 1000) % 60);
-		const minutes = Math.floor((total / 1000 / 60) % 60);
-		const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-		const days = Math.floor(total / (1000 * 60 * 60 * 24));
-
-	return {
-	total,
-	days,
-	hours,
-	minutes,
-	seconds
-	};
-	}
-
-	function initializeClock(id, endtime) {
-		const clock = document.getElementById(id);
-		const daysSpan = clock.querySelector('.days');
-		const hoursSpan = clock.querySelector('.hours');
-		const minutesSpan = clock.querySelector('.minutes');
-		const secondsSpan = clock.querySelector('.seconds');
-
-	function updateClock() {
-	const t = getTimeRemaining(endtime);
-
-	daysSpan.innerHTML = t.days;
-	hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-	minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-	secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-	if (t.total <= 0) {
-	  clearInterval(timeinterval);
-	}
-	}
-
-	updateClock();
-	const timeinterval = setInterval(updateClock, 1000);
-	}
-
-	const deadline =  new Date(Date.parse(new Date("October 13, 2024 17:00:00")));
-	initializeClock('countdown-clock', deadline);
-</script>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>46-C/34 Nyaya Marg Opp NCZCC, Prayagraj 211001</small>
+                </div>
+               
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+91-8965830314</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href="https://www.instagram.com/soch_themindclinic/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
 
 
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5"><img src=img/logo.png></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#home" class="nav-item nav-link">Home</a>
+                <a href="#aboutscroll" class="nav-item nav-link">About</a>
+                <a href="#servicescroll" class="nav-item nav-link">Service</a>
+                <a href="#whyusscroll" class="nav-item nav-link">Why Us</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="https://calendly.com/sochthemindclinic/appointment" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid header bg-primary p-0 mb-5" id="home">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-white mb-5">Empowering Minds, Transforming Lives.</h1>
+                <div class="row g-4">
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">45000000</h2>
+                            <p class="text-light mb-0">Indians Living with Depression</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">38000000</h2>
+                            <p class="text-light mb-0">Indians Suffering from Anxiety</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">164033</h2>
+                            <p class="text-light mb-0">Indian Sucides Reported in 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Psychotherapy</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Wellness Coaching</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Psycho-oncology</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="aboutscroll">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="img/about-1.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/about-2.jpg" alt="" style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
+                    <h1 class="mb-4">Get To Know Us!</h1>
+                    <p>At Socच - The Mind Clinic, we are committed to supporting individuals on their journey towards emotional well-being, mental health, cognitive processes and a flourishing mind. Our clinic provides compassionate, evidence-based psychotherapy services tailored to meet the unique needs of each client. We believe in a holistic approach to mental health, integrating various therapeutic modalities with a blend of traditional roots to foster growth, resilience,and healing.</p>
+                    <p class="mb-4">At Socच, we believe in creating a safe, non-judgmental space where you can explore your thoughts, feelings, and  behaviours, and develop the tools needed to lead a healthier, more fulfilling life. Your well-being is our priority, and we are dedicated to working with you every step of the way on your journey toward mental wellness.</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Quality Mental Healthcare</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Holistic Approach to Mental Health</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Safe, Compassionate and Committed Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="servicescroll">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
+                <h1>What We Offer</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <img src="img/therapy.svg">
+                        </div>
+                        <h4 class="mb-3">Psychotherapy</h4>
+                        <p class="mb-4">Our clinic offers professional psychotherapy services to support individuals facing emotional, psychological, and behavioural challenges</p>
+                        <a class="btn" href="files/Soch.pdf"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <img src="img/mentalhealth.svg">
+                        </div>
+                        <h4 class="mb-3">Mental Health Counselling</h4>
+                        <p class="mb-4">Our clinic offers compassionate and confidential mental health counseling, tailored to support your emotional well-being and help you navigate life's challenges with clarity and strength.</p>
+                        <a class="btn" href="files/Soch.pdf"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <img src="img/heart.svg">
+                        </div>
+                        <h4 class="mb-3">Health Counselling</h4>
+                        <p class="mb-4">Our clinic provides personalized health counseling to guide you toward a healthier, balanced lifestyle, empowering you to make informed choices for your well-being.</p>
+                        <a class="btn" href="files/Soch.pdf"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <img src="img/health.svg">
+                        </div>
+                        <h4 class="mb-3">Disease Counselling</h4>
+                        <p class="mb-4">Our clinic offers expert disease counseling to help you understand your condition, manage symptoms, and improve your quality of life with compassionate support.</p>
+                        <a class="btn" href="files/Soch.pdf"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <img src="img/oncology.svg">
+                        </div>
+                        <h4 class="mb-3">Psycho-oncology</h4>
+                        <p class="mb-4">Our clinic offers expert disease counseling to help you understand your condition, manage symptoms, and improve your quality of life with compassionate support.</p>
+                        <a class="btn" href="files/Soch.pdf"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <img src="img/wellness.svg">
+                        </div>
+                        <h4 class="mb-3">Wellness Coaching</h4>
+                        <p class="mb-4">Our clinic provides wellness coaching to empower you in achieving your health goals, promoting a balanced lifestyle through personalized guidance and support.</p>
+                        <a class="btn" href="files/Soch.pdf"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0" id="whyusscroll">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Why Us</p>
+                        <h1 class="text-white mb-4">Why Choose Us</h1>
+                        <p class="text-white mb-4 pb-2">Choose us for a compassionate, evidence-based approach to mental health, dedicated to empowering you on your journey to well-being.</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <img src="img/confidential.svg">
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-0">Confidential And Discreet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <img src="img/Professional.svg">
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Professional</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <img src="img/empathy.svg">
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Empathy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <img src="img/Licensed.svg">
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Licensed Practitioner</p>
+                                    </div>
+                                </div>
+                            </div><div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <img src="img/nonjudgemental.svg">
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Non Judgemental</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <img src="img/GoodListener.svg">
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Good Listener</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Appointment Start -->
+    <div class="container-xxl py-5" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Appointment</p>
+                    <h1 class="mb-4">Make An Appointment To Visit Our Doctor</h1>
+                    <p class="mb-4">Book your confidential appointment today and take the first step toward better mental health.</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Call Us Now</p>
+                            <h5 class="mb-0">+91-8965830314</h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Mail Us Now</p>
+                            <h5 class="mb-0">sochthemindclinic@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Choose Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <a href="https://calendly.com/sochthemindclinic/appointment" class="btn btn-primary w-100 py-3">Book Appointment</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>46-C/34 Second Floor,Nyaya Marg Opp NCZCC, Prayagraj 211001</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91-8965830314</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>sochthemindclinic@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://www.instagram.com/soch_themindclinic/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Soch-The Mind Clinic</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
